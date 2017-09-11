@@ -1,6 +1,40 @@
-#mainMenue {
-
-}
 #mainMenue li {
   display : inline;
+  padding : 0 0.5em;
+  text-align : center;
+  margin: auto;
+  width: 50%;
+
+  border-style: solid;
+  border-width: medium;
+  border-color: green;
+}
+#mainMenue {
+  list-style-type : none;
+  width: 100%;
+
+
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+
+}
+
+#mainMenue ul {
+  margin: auto;
+  width: 60%;
+
+  border-style: solid;
+  border-width: medium;
+  border-color: purple;
+}
+#banner{
+  margin: auto;
+  width: 60%;
+
+
+  border-style: solid;
+  border-width: medium;
+  border-color: blue;
+
 }

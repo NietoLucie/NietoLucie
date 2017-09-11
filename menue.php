@@ -4,7 +4,8 @@
   $menue = array(
     "presentation"=>"presentation.php",
     "infographie3D"=>"3dCreation.php",
-    "contact"=>"contact.php"
+    "contact"=>"contact.php",
+    "TP"=>"cours/index.php"
   );
 
   $menueStr = "<ul>";
