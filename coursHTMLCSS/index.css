@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /*for old mozzila*/
+  -webkit-box-sizing: border-box; /*for old chrome dans safari*/
+}
+
+h1#title{
+  text-align: center;
+  color: purple;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+li{
+  display: inline-block;
+}
+ul{
+  display: block;
+  width: 200px;
+  margin: auto;
+}

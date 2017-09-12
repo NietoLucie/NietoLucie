@@ -1,40 +1,29 @@
-#mainMenue li {
-  display : inline;
-  padding : 0 0.5em;
-  text-align : center;
+#banner{
+  display: block;
   margin: auto;
-  width: 50%;
-
-  border-style: solid;
-  border-width: medium;
-  border-color: green;
+  width: 60%;
 }
+
 #mainMenue {
   list-style-type : none;
   width: 100%;
-
-
-  border-style: solid;
-  border-width: medium;
-  border-color: red;
-
+  text-align: center;
 }
 
 #mainMenue ul {
+  display: inline-block;
   margin: auto;
-  width: 60%;
-
-  border-style: solid;
-  border-width: medium;
-  border-color: purple;
 }
-#banner{
-  margin: auto;
-  width: 60%;
-
-
-  border-style: solid;
-  border-width: medium;
-  border-color: blue;
-
+#mainMenue li {
+  display : inline-block;
+  width: 100px;
+  text-align: center;
+}
+#mainMenue a{
+  text-decoration: none;
+  color: orange;
+}
+#mainMenue a:hover{
+  color: blue;
+  font-weight: bold;
 }
