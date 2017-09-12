@@ -5,7 +5,8 @@
     "presentation"=>"presentation.php",
     "infographie3D"=>"3dCreation.php",
     "contact"=>"contact.php",
-    "TP"=>"cours/index.php"
+    "TP PHP"=>"coursPHP/index.php",
+    "TP html css"=>"coursHTMLCSS/index.html"
   );
 
   $menueStr = "<ul>";
