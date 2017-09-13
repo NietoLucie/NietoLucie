@@ -1,0 +1,34 @@
+#articles{
+  display: block;
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.article {
+  display: block;
+  width: 20%;
+  background-color: #B5A4B5;
+
+  margin: 10px auto 10px auto;
+  padding: 10px;
+}
+.article p {
+  display: block;
+  width: 80%;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+.chapeau {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+.article h2{
+  text-align: center;
+}
+.article img{
+  width: 200px;
+  margin: auto;
+}
