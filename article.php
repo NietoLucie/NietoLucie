@@ -11,7 +11,7 @@ function article($contenue){
     o => other, pour les autre !! fournir code html/css complet
   */
 
-  $article = "<div class='article'>";
+/*  $article = "<div class='article'>";
   foreach ($contenue as $key => $value) {
     if($key=="p") $article .= "<p>$value</p>";
     elseif ($key=="title") $article .= "<h2>$value</h2>";
@@ -21,6 +21,8 @@ function article($contenue){
     else $article .= "<p class='error'>ERROR index non reconue : $key</p>";
   }
   $article .= "</div>";
-  echo $article;
+  echo $article;*/
 }
+
+
  ?>

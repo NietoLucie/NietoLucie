@@ -4,7 +4,7 @@
   $menue = array(
     "presentation"=>"presentation.php",
     "infographie3D"=>"3dCreation.php",
-    "contact"=>"contact.php",
+    "Facebook"=>"https://www.facebook.com/McAsulys/",
     "TP PHP"=>"coursPHP/index.php",
     "TP html css"=>"coursHTMLCSS/index.html"
   );

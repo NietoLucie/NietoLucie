@@ -22,7 +22,8 @@
         on s'en fout, c'est juste pour le teste."
       ];
 
-      article($article1);
+      $fichierArticle = fopen("article/chat.txt", "r");
+      article($fichierArticle);
 
      ?>
   </div>
