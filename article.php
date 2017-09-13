@@ -1,5 +1,5 @@
 <?php
-function article($contenue){
+function article($xml){
   /*
   le contenue est un tableau contenant le texte, les image et
   autre élément html/css du site
@@ -23,6 +23,7 @@ function article($contenue){
   $article .= "</div>";
   echo $article;*/
 }
+
 
 
  ?>
