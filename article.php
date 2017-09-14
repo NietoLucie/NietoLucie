@@ -22,6 +22,8 @@ function article($xml){
   }
   $article .= "</div>";
   echo $article;*/
+
+  
 }
 
 
