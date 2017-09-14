@@ -18,7 +18,7 @@
   $json = json_encode($fichierArticle);
   $array = json_decode($json,TRUE);
 
-echo "<pre>".print_r($array)."</pre>"; die(1);
+echo "<pre>".print_r($array)."</pre>"; //die(1);
 $article = "<div class='article'>";
     foreach ($array as $key=>$value) {
       if($key=="p") $article .= "<p>$value</p>";
