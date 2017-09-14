@@ -1,6 +1,0 @@
-[Titre] chat;
-[Chapeau] ceci est un chat;
-[Img] chat1; http://www.vulgaris-medical.com/sites/default/files/styles/big-lightbox/public/field/image/actualites/2016/02/12/le-chat-source-de-bienfaits-pour-votre-sante.jpg
-[P] bonjour à tous, ceci est un article de merde qui sert à rien;
-[Img] chat2; https://www.sciencesetavenir.fr/assets/img/2016/09/02/cover-r4x3w1000-57e16b966fe58-chat-qui-mange.jpg;
-[P] rebonjour, c'est encore un chat pas tope, voila.;
