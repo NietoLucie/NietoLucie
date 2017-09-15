@@ -1,35 +1,44 @@
 #articles{
   display: block;
-  width: auto;
+  width: 60%;
   margin: auto;
-  text-align: center;
+  font-family: Arial;
 }
 
 .article {
   display: block;
-  width: 20%;
-  background-color: #B5A4B5;
+  width: auto;
+  background-color: #212121;
+  color: #f1f1f1;
 
   margin: 10px auto 10px auto;
-  padding: 10px;
+  padding: 10px 10% 10px 10%;
+}
+.chapeau {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
 }
 .article p {
   display: block;
   width: 80%;
-  margin: 10px 0 10px 0;
-  text-align: left;
+  margin: 10px auto 10px auto;
+
+  border: 2px solid green;
 }
-.chapeau {
+.article p::first-line{
   display: block;
-  text-align: center;
-  font-weight: bold;
-  margin: 10px 0 10px 0;
+  font-size: 22px;
+  padding-left: 30px;
+
+  border: 2px solid red;
 }
-.article h1{
+.article h2{
   text-align: center;
-  font-size: 2e;
+  font-size: 50pt;
 }
 .article img{
-  width: 200px;
+  display: block;
+  width: 50%;
   margin: auto;
 }
