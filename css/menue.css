@@ -12,12 +12,14 @@
 
 #mainMenue ul {
   display: inline-block;
-  margin: auto;
+  margin-bottom: 20px;
+  padding: 0;
 }
 #mainMenue li {
   display : inline-block;
-  width: 120px; //largeur des bouton du menue
+  width: 200px; //largeur des bouton du menue
   text-align: center;
+  font-size: 20pt;
 }
 #mainMenue a{
   display: block;
