@@ -12,7 +12,7 @@
     include "article.php";
 
 
-    $fichierArticle = simplexml_load_file("article/chat.xml");
+/*    $fichierArticle = simplexml_load_file("article/chat.xml");
 
 
   $json = json_encode($fichierArticle);
@@ -33,7 +33,9 @@ $article = "<div class='article'>";
       }
       elseif ($key=="o") $article .= "$value";
       else $article .= "<p class='error'>ERROR index non reconue : $key</p>";
-    }
+    }*/
+
+article("chat");
 
      ?>
   </div>
