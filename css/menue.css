@@ -16,14 +16,19 @@
 }
 #mainMenue li {
   display : inline-block;
-  width: 100px;
+  width: 120px; //largeur des bouton du menue
   text-align: center;
 }
 #mainMenue a{
+  display: block;
+  background-color: #727272;
+  padding : 5px 0 5px 0;
+  margin : 0 5px 0 5px;
+
   text-decoration: none;
-  color: orange;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #mainMenue a:hover{
-  color: blue;
-  font-weight: bold;
+  background-color: #555555;
 }

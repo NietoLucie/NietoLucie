@@ -1,3 +1,7 @@
 @import "css/claer.css";
 @import "css/menue.css";
 @import "css/article.css";
+
+body{
+  background-color: #393939;
+}
