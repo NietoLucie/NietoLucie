@@ -9,24 +9,18 @@
   width: 60%;
   text-align: center;
   margin: auto;
-
-  border: 2px solid green;
 }
 
 #mainMenue ul {
-  display: inline-block;
+  display: flex;
   margin-bottom: 1%;
   padding: 0;
-
-  border: 2px solid blue;
 }
 #mainMenue li {
   display : inline-block;
   width: 30%; //largeur des bouton du menue
   text-align: center;
-  font-size: 2em;
-
-  border: 2px solid red;
+  font-size: 100%;
 }
 #mainMenue a{
   display: block;
