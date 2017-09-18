@@ -2,12 +2,14 @@
 <form  action="" method="post">
   <input type="text" name="nb">
   <?php
-  if(isset($_POST["socket"])){
-    print "<hidden name='secret' value='".$_POST["secret"].">";
+
+  if(isset($_POST["secret"])){
+    print "<input type='hidden' name='secret' value='".$_POST["secret"]."'>";
+    $nouv=$_POST["secret"];
   }
   else {
-    $i = rand(1,101);
-    print "<hidden name='secret' value='$i'>";
+    $nouv = rand(1,100);
+    print "<input type='hidden' name='secret' value='$nouv'>";
   }
 
 
@@ -16,15 +18,18 @@
 </form>
 
 <?php
-if(isset($_POST)){
-  if($_POST["nb"] < $price){
+print($nouv);
+
+if(isset($_POST["nb"])){
+  if($_POST["nb"] < $nouv){
     echo "more";
   }
-  elseif ($_POST["nb"] > $price) {
+  elseif ($_POST["nb"] > $nouv) {
     echo "less";
   }
   else {
     echo "You win";
+    unset($_POST); //ne fonctionne pas comme je veux.
   }
 }
 

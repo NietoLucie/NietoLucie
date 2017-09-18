@@ -3,7 +3,8 @@
   $menue = array(
     "tp0 et 1"=>"tp2a.php",
     "formulaire"=>"formulaire.php",
-    "just prix"=>"justprix.php"
+    "just prix"=>"justprix.php",
+    "exo2"=>"exo2.php"
   );
 
   $menueStr = "<ul><li><b>Liste des cours</b></li>";
