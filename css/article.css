@@ -38,3 +38,9 @@
   width: 50%;
   margin: auto auto 30px auto;
 }
+
+@media screen and (max-width : 750px) {
+  #articles{
+    width: 100%;
+  }
+}

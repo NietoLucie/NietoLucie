@@ -35,3 +35,18 @@
 #mainMenue a:hover{
   background-color: #555555;
 }
+@media screen and (max-width : 750px) {
+  #mainMenue {
+    width: 100%;
+  }
+}
+@media screen and (max-width : 500px){
+  #mainMenue li {
+    display : block;
+    width: 100%;
+  }
+  #mainMenue ul {
+    display: block;
+    margin : auto;
+  }
+}
