@@ -1,0 +1,55 @@
+#banner{
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+#mainMenue {
+  list-style-type : none;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+#mainMenue ul {
+  display: flex;
+  margin-bottom: 1%;
+  padding: 0;
+}
+#mainMenue li {
+  display : inline-block;
+  width: 30%; //largeur des bouton du menue
+  text-align: center;
+  font-size: 100%;
+}
+#mainMenue a{
+  display: block;
+  background-color: #727272;
+  padding : 2% 0 2% 0;
+  margin : 0 2% 0 2%;
+
+  text-decoration: none;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#mainMenue a:hover{
+  background-color: #555555;
+}
+@media screen and (max-width : 750px) {
+  #mainMenue {
+    width: 100%;
+  }
+  #banner{
+    width: 100%;
+  }
+}
+@media screen and (max-width : 500px){
+  #mainMenue li {
+    display : block;
+    width: 100%;
+  }
+  #mainMenue ul {
+    display: block;
+    margin : auto;
+  }
+}

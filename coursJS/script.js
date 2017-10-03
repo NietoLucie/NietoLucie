@@ -58,3 +58,27 @@ tab1 = [15,36,48,59,78];
 tab2 = [1,12,35,47,98,120];
 
 console.log(mergeTab(tab1, tab2));
+
+//exo 7
+
+calendrier = [];
+calendrier['lundi'] = [];
+calendrier['lundi']['8h15'] = "CSS";
+calendrier['lundi']['9h45'] = "POO";
+calendrier['lundi']['11h30'] = "PHP";
+calendrier['mardi'] = [];
+calendrier['mardi']['14h10'] = "Esthétique";
+calendrier['mardi']['16h00'] = "inforgraphie";
+
+console.log(calendrier);
+
+//exo 8
+
+tab3 = new Array;
+for(i=0;i<3;i++){
+  tab3.push([]);
+  for(j=0;j<4;j++){
+    tab3[i].push(Math.floor(Math.random()*10));
+  }
+}
+console.log(tab3);

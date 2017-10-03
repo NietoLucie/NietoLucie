@@ -1,15 +1,17 @@
-/** Ce style est cadeau ;-) */
 body{
   font-family: 'Open Sans', Arial, sans-serif;
   overflow-x: hidden; //cahcer la scroll bar horizontale
 
   width: 100%
 }
+
+/*****HEADER*****/
+
 .header img[src="images/logo.png"]{
   display: block;
   margin: 20px auto 20px auto;
 }
-.header img[src="images/menu.png"], img[src="images/menu-close.png"]{
+.header-toogle{
   display: none;
 }
 .header-menu {
@@ -32,12 +34,76 @@ body{
   text-decoration: none;
 }
 
-.banner-video video{
-  width: 100%;
+@media screen and (max-width: 780px) {
+  .header{
+    padding-top: 20px;
+  }
+  .header img[src="images/logo.png"]{
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .header-toogle{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: block;
+  }
+  .header-toogle-close{
+    display: none;
+  }
+  #main-header:target .header-toogle-open{
+    display: none;
+  }
+  #main-header:target .header-toogle-close{
+    display: block;
+  }
+  .header-menu{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 300ms ease-in-out;
+  }
+  #main-header:target .header-menu{
+    max-height: 300px;
+  }
+  .header-menu a {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .header-menu a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
 }
-.banner-desc{
+
+/******END HEADER******/
+
+/******BANNER**********/
+
+.banner {
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid blue;
+}
+.banner-video{
+  position: absolute;
+  width: 1920px;
+  left: 50%;
+  transform: translateX(-50%); /*décale de 50% sur la gauche*/
+}
+.banner-desc{ /*texte sur la bagniere*/
+  position: absolute;
+  z-index: 2;
   text-align: center;
-  color: #fff;
+  color: #000;
 
 }
 .banner-desc h1{
