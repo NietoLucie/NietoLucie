@@ -14,7 +14,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			
 			
-    <title>Mon Facebook</title>
+    <title>Facebook</title>
 		<!-- Bootstrap core CSS -->
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
 
@@ -53,3 +53,5 @@
 		
 	</body>
 </html>
+
+
