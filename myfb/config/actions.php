@@ -3,5 +3,14 @@
 
 $listeDesActions = array(
     "accueil" => "vues/accueil.php",
-    "page2" => "vues/page2.php",
+    "mur" => "vues/mur.php",
+    "ecris" => "vues/ecris.php",
+
+    "signin" => "traitement/connexion.php",
+    "signup" => "traitement/creatacount.php",
+    "signout" => "traitement/deconnexion.php",
+    "write" => "traitement/addarticle.php",
+    "delete" => "traitement/deletearticle.php",
+    "adfriend" => "traitement/adfriend.php"
+
 );
