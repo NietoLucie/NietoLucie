@@ -4,6 +4,7 @@ include("config/config.php");
 include("config/bd.php"); // commentaire
 include("divers/balises.php");
 include("config/actions.php");
+include("traitement/rememberme.php");
 session_start();
 ob_start(); // Je démarre le buffer de sortie : les données à afficher sont stockées
 
@@ -88,6 +89,7 @@ if (isset($_SESSION['info'])) {
         </div>
     </div>
 </div>
+<a href="index.php?action=signin">signin</a>
 <footer>Le pied de page</footer>
 </body>
 </html>
