@@ -89,21 +89,36 @@ body{
 
 .banner {
   height: 700px;
-  overflow: hidden;
+  overflow: hidden; /*empeche les élément de dépasser.*/
   position: relative;
-  border: 2px solid blue;
 }
 .banner-video{
   position: absolute;
   width: 1920px;
   left: 50%;
+  z-index: 1;
   transform: translateX(-50%); /*décale de 50% sur la gauche*/
 }
 .banner-desc{ /*texte sur la bagniere*/
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
-  color: #000;
+  color: #fff;
+  width: 100%;
+  top: 45%;
+  transform: translateY(-50%);
+
+}
+.banner-video-overlay{
+  height: 700px;
+  width: 1920px;
+  z-index: 2;
+  background: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 
 }
 .banner-desc h1{
@@ -112,7 +127,72 @@ body{
 }
 .banner-desc a{
   text-transform: uppercase;
-  color: black;
-  border: 2px solid #000;
+  color: #fff;
+  border: 2px solid #fff;
   padding: 10px 20px 10px 20px;
 }
+
+
+/***** Intro TEXTE *****/
+
+.short-text{
+  text-align: center;
+  margin: 50px;
+  line-height: 1.7em;
+}
+
+
+/****** Women *********/
+
+.three-women-item{
+  padding: 0;
+  margin: 0;
+}
+.effect-img img{
+  width: 100%;
+}
+.effect-img figcaption{
+  position: absolute;
+  text-align: center;
+  width : 100%;
+  bottom: 5%;
+  color: white;
+
+}
+.title-like{
+  font-size: 4em;
+  margin: 0;
+  font-family: "Reenie Beanie";
+}
+/**** BUTTON ****/
+
+.btn{
+  padding: 11px 25px;
+  border: 2px solid;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.btn:hover{
+  text-decoration: none;
+}
+.btn.btn-white{
+  color: white;
+  border-color: white;
+}
+.btn.btn-white:hover{
+  color: #555;
+  background-color: white;
+}
+.btn.btn-grey{
+  color: grey;
+  border-color: grey;
+}
+.btn.btn-white:hover{
+  color: #999;
+  background-color: grey;
+}
+
+/***** END  BUTTON *****/

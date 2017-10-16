@@ -1,0 +1,67 @@
+.container > div.row {
+    margin-top: 20px;
+}
+
+#commandes > ul {
+    padding-left: 0px;
+    margin-top: 160px;
+    margin-left: 50px;
+}
+
+#commandes > ul > li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#commandes > ul > li > button {
+    width: 130px;
+}
+
+#commandes {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#couleurs {
+    margin-top: 20px;
+    padding-top: 10px;
+    background: WhiteSmoke;
+    border: 5px solid silver;
+    border-radius: 10px;
+}
+
+#solution {
+    padding-top: 10px;
+    background: WhiteSmoke;
+    border: 5px solid silver;
+    border-radius: 10px;
+}
+
+#solution li, #plateau li, #couleurs li {
+    display: inline;
+    list-style: none;
+    margin: 10px;
+}
+
+#solution div{
+    text-align:center;
+    font-size:200%;
+    padding-bottom:10px;
+}
+
+#plateau {
+    padding-top: 10px;
+    margin-top: 20px;
+    background: tan;
+    border: 5px solid SaddleBrown;
+    border-radius: 25px;
+}
+
+#plateau li span {
+    display: inline-block;
+    width: 30px;
+}
+
+#plateau li span canvas {
+    margin-left: 5px;
+}
