@@ -14,7 +14,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			
 			
-    <title>Mon Facebook</title>
+    <title>Facebook</title>
 		<!-- Bootstrap core CSS -->
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
 
@@ -38,13 +38,20 @@
 			Vos amis
 		</div>
 	
-		<div class="PasDeReponse">
+		<div class="pasDeReponse">
 			Ceux la ne vous ont pas répondu, snif !
 		</div>
 		
-		<div>
+		<div class="attente">
+			Ceux la espèrent que vous aller leur dire oui !
+		</div>
 		
+		<div class="recherche">
+			<input type="submit" value="Hop.." placeholder="Rechercher des amis">
+			Résultat de la recherche
 		</div>
 		
 	</body>
 </html>
+
+
