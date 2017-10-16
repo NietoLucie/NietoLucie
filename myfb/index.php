@@ -38,7 +38,13 @@
 			Vos amis
 		</div>
 	
-	
+		<div class="PasDeReponse">
+			Ceux la ne vous ont pas répondu, snif !
+		</div>
+		
+		<div>
+		
+		</div>
 		
 	</body>
 </html>
