@@ -5,6 +5,7 @@ $listeDesActions = array(
     "accueil" => "vues/accueil.php",
     "mur" => "vues/mur.php",
     "ecris" => "vues/ecris.php",
+    "adduser" => "vues/adduser.php",
 
     "signin" => "traitement/connexion.php",
     "signup" => "traitement/creatacount.php",
