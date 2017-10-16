@@ -38,12 +38,17 @@
 			Vos amis
 		</div>
 	
-		<div class="PasDeReponse">
+		<div class="pasDeReponse">
 			Ceux la ne vous ont pas répondu, snif !
 		</div>
 		
-		<div>
+		<div class="attente">
+			Ceux la espèrent que vous aller leur dire oui !
+		</div>
 		
+		<div class="recherche">
+			<input type="submit" value="Hop.." placeholder="Rechercher des amis">
+			Résultat de la recherche
 		</div>
 		
 	</body>
