@@ -14,7 +14,7 @@ Vous devez utiliser les fonctions JavaScript
   - "Math.floor(x)" retourne la partie entière de "x".
  */
 
-var combinaisonSecrete = function (nbTrous, nbCouleurs) {
+var combinaisonSecrete = function (nbTrous, nbCouleurs) { //WORK !!!
     let sequence = [];
     for(i=0;i<nbTrous;i++)
       sequence.push(  Math.floor(Math.random()*(nbCouleurs-1))  );
@@ -47,11 +47,12 @@ Pour être correct, cet argument doit vérifier les conditions suivantes:
   - les valeurs entières qu'il contient doivent toutes être comprises entre 0 et "nbCouleurs-1"
 Cette fonction doit retourner true si l'argument "proposition" est correctement formé, et false sinon.
  */
-var estValide = function (proposition, nbTrous, nbCouleurs) {
-    if(proposition.lentgh == nbTrous){
+var estValide = function (proposition, nbTrous, nbCouleurs) { //WORK !!!
+    if(proposition.length == nbTrous){
       for(data of proposition){
-        if(data>nbCouleurs-1 && data<0)
+        if(data>nbCouleurs-1 || data<0 || data==undefined) {
           return false;
+        }
       }
       return true;
     }
@@ -62,10 +63,14 @@ Cette fonction retourne true si la combinaison proposée par le joueur (l'argume
 et false sinon.
 Les arguments "proposition" et "solution" sont des tableaux d'entiers de longueur "nbTrous"
  */
-var solutionTrouvee = function (proposition, solution, nbTrous) {
-    if(proposition == solution)
-      return true;
-
+var solutionTrouvee = function (proposition, solution, nbTrous) { //WORK !!!
+    let v = 0;
+    for (var i = 0; i < proposition.length; i++) {
+      if(proposition[i] == solution[i]){
+        v++;
+      }
+    }
+    if (v==4) return true;
     return false;
 };
 
@@ -86,12 +91,16 @@ Le tableau "indications" est de longueur "nbTrou" et peut contenir les constante
   - la constante BLANC dans la case i du tableau "indications" signale que la couleur en position i est présente dans la solution, mais à une autre place
 Cette fonction, ne place que les constantes NOIR.
  */
-var positionsExactes = function (proposition, solution, nbTrous) {
+var positionsExactes = function (proposition, solution, nbTrous) { //WORK !!!
     let indications = [];
     for(i=0;i<nbTrous;i++){
-      if(proposition[i] == solution[i])
-        indications[i] == "NOIR";
+      console.log(i);
+      if(proposition[i] == solution[i]){
+        console.log("noir");
+        indications[i] = NOIR;
+      }
     }
+    console.log("return");
     return indications;
 };
 
@@ -99,16 +108,29 @@ var positionsExactes = function (proposition, solution, nbTrous) {
 Cette fonction complète la précédente en plaçant les constantes BLANC.
 Elle possède un argument supplémentaire : le tableau "indications" qui a été partiellement rempli par la fonction précédente.
  */
-var positionsInexactes = function (proposition, solution, indications, nbTrous) {
-    for(i=0;i<nbTrous;i++){
-      for(j=0;j<nbTrous;j++){
-        if(proposition[i] == solution[j] && indications[i]!= "NOIR"){
-          indications[i] = "BLANC";
-        }
-      }
-    }
-    return indications
-};
+ var positionsInexactes = function (proposition, solution, indications, nbTrous) { //NOT WORKING
+     let marque = [];
+     for (let i = 0;i<nbTrous;i++) {
+       console.log("truc2");
+       if (indications[i] == NOIR) {
+         console.log("noir2");
+            marque[i] = 1;
+         }
+     }
+     for (let i = 0;i<nbTrous;i++) {
+         if (indications[i] === NOIR) continue;
+         for (let j = 0;j<nbTrous;j++) {
+           console.log("machin");
+             if (marque[i] != 1 && proposition[j] == solution[i]) {
+               console.log("blanc");
+                indications[i] = BLANC;
+                 marque[j] = 1;
+                 break;
+             }
+         }
+     }
+     return indications;
+}
 
 /* ----- fonction n°6 -----
 Cette fonction traite l'option de jeu "informations désordonnée": elle agrège les données du tableau "indications" pour retourner le nombre
