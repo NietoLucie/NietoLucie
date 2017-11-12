@@ -137,8 +137,17 @@ body{
 
 .short-text{
   text-align: center;
-  margin: 50px;
+  padding: 50px 200px 50px 200px;
   line-height: 1.7em;
+  background-color: #eee;
+}
+@media screen and (max-width: 780px){
+  .short-text{
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    line-height: 1.7em;
+    background-color: #eee;
+  }
 }
 
 
@@ -363,8 +372,52 @@ body{
 }
 /***** RESTOURNE ******/
 
-.bons-plan{
+.bons-plans p{
+  background-image: url(../images/bon-reduction.png);
+  background-repeat: no-repeat;
 
+  display: block;
+  padding-left: 150px;
+  padding-bottom: 20px;
+
+  width: 300px;
+  text-transform: uppercase;
+  margin: auto;
+}
+.bons-plans form{
+  display: block;
+  width: 300px;
+  margin :auto;
+}
+.bons-plans input{
+  display: inline-block;
+  width: 49%;
+  padding: 11px 25px;
+  text-align: left;
+}
+.bons-plans .title-like{
+  color: black;
+  text-align: center;
+}
+@media screen and (max-width: 780px){
+  .bons-plans p{
+    background-image: url(../images/bon-reduction.png);
+    background-repeat: no-repeat;
+    background-position: top;
+
+    display: block;
+    padding-top: 150px;
+    padding-left: 0px;
+    text-align: center;
+
+    width: 300px;
+
+    margin: auto;
+  }
+  .bons-plans input{
+    display: block;
+    width: 300px;
+  }
 }
 
 /***** SOCIAL NETWORK *****/
