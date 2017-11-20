@@ -1,0 +1,35 @@
+#header {
+	width: auto;
+	height: 290px;
+	background-color: pink;
+	text-align: center;
+	font-size: 50pt;
+}
+
+.amis {
+	width: 500px;
+	height: 400px;
+	background-color: red;
+	display: inline-block;
+}
+
+.pasDeReponse {
+	width: 500px;
+	height: 400px;
+	background-color: yellow;
+	display: inline-block;
+}
+
+.attente {
+	width: 500px;
+	height: 400px;
+	background-color: orange;
+	display: inline-block;
+}
+
+.recherche {
+	width: 500px;
+	height: 600px;
+	background-color: grey;
+	display: inline-block;
+}
