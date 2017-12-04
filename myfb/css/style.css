@@ -23,31 +23,45 @@ body {
 	opacity: 20%;
 }
 
+#parent {
+	display: flex;
+	flex-direction : row;
+}
+
 .amis {
 	width: 500px;
 	height: 400px;
 	/*background-color: red;*/
 	margin-top : 50px;
 	color: pink;
+	display: block;
 }
 
 .pasDeReponse {
 	width: 500px;
 	height: 400px;
 	/*background-color: yellow;*/
+	margin-top : 50px;
+	color: pink;
+	display: block;
 }
 
 .attente {
 	width: 500px;
 	height: 400px;
 	/*background-color: orange;*/
+	margin-top : 50px;
 	color: pink;
+	display: block;
 }
 
 .recherche {
 	width: 500px;
-	height: 600px;
+	height: 400px;
 	/*background-color: grey;*/
+	margin-top : 50px;
 	color: pink;
+	display: block;
 }
+
 
