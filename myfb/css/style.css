@@ -10,7 +10,7 @@
 	color: pink;
 }
 
-img {
+#header img {
 	float: left;
 	margin-top:10px;
 	margin-left: 120px;
@@ -64,4 +64,30 @@ body {
 	display: block;
 }
 
+#footer {
+	border:1px solid red;
+	height:150px;
+	width: auto;
+	margin-bottom:0;
+	margin-top: 250px;
+	background-color: pink;
+}
 
+/*#footer .facebook img {
+	width:70px;
+	margin-left: 20%;
+	margin-top: 20px;
+}*/
+
+#footer .twitter img {
+	width: 70px;
+	margin-left: 52%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.twitter p{
+	margin-left: 46%;
+	color: white;
+	font-size: 15pt;
+}
