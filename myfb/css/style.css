@@ -1,35 +1,53 @@
 #header {
 	width: auto;
-	height: 290px;
-	background-color: pink;
+	height: 200px;
+	/*background-color: pink;*/
 	text-align: center;
-	font-size: 50pt;
+	font-size: 40pt;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: pink;
+}
+
+img {
+	float: left;
+	margin-top:10px;
+	margin-left: 120px;
+	width : 180px;
+}
+
+body {
+	background-image: ;
+	background-attachment: scroll;
+	opacity: 20%;
 }
 
 .amis {
 	width: 500px;
 	height: 400px;
-	background-color: red;
-	display: inline-block;
+	/*background-color: red;*/
+	margin-top : 50px;
+	color: pink;
 }
 
 .pasDeReponse {
 	width: 500px;
 	height: 400px;
-	background-color: yellow;
-	display: inline-block;
+	/*background-color: yellow;*/
 }
 
 .attente {
 	width: 500px;
 	height: 400px;
-	background-color: orange;
-	display: inline-block;
+	/*background-color: orange;*/
+	color: pink;
 }
 
 .recherche {
 	width: 500px;
 	height: 600px;
-	background-color: grey;
-	display: inline-block;
+	/*background-color: grey;*/
+	color: pink;
 }
+
